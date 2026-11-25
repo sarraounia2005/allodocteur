@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AllôDocteur — Votre Santé, Notre joie !</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-note"><span class="pulse"></span> Votre Santé, Notre joie !</div>
+      <div class="topbar-note">Ouvert 7 jours sur 7</div>
+      <div class="topbar-links">
+        <button class="currency" type="button">USD <span>⌄</span></button>
+        <a href="#appointment">Prendre rendez-vous</a>
+        <a href="#">Portail patient</a>
+        <a href="#contact">Nous contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="AllôDocteur accueil">
+        <svg class="brand-logo" viewBox="0 0 390 92" aria-label="AllôDocteur — Votre Santé, Notre joie !" role="img">
+          <g transform="translate(2 9)">
+            <path d="M12 9c-5 3-7 9-4 16 5 13 16 24 29 29 7 3 13 1 16-4l-11-11-8 6c-5-3-10-8-13-13l6-8L16 13Z" fill="#f58220"/>
+            <path d="m9 8 8-6c3-2 7-1 9 2l8 12c2 3 1 7-2 9l-7 5C19 24 14 17 9 8Z" fill="#ffbd00"/>
+            <path d="m39 44 6-7c2-3 6-4 9-2l12 8c3 2 4 6 2 9l-6 8c-8-4-16-10-23-16Z" fill="#f58220"/>
+            <path d="M39 18c7 3 11 8 12 15M49 8c13 5 21 15 23 29" fill="none" stroke="#f58220" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <text x="78" y="47" font-family="Arial, sans-serif" font-size="44" font-weight="800">
+            <tspan fill="#ffbd00">Allô</tspan><tspan fill="#239447">Docteur</tspan>
+          </text>
+          <line x1="78" y1="59" x2="383" y2="59" stroke="#239447" stroke-width="3" stroke-linecap="round"/>
+          <text x="125" y="82" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#171717">Votre Santé, Notre joie !</text>
+        </svg>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu">
+        <a class="active" href="#">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="trust-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7v10M7 12h10"/></svg>
+            Des soins de confiance, une meilleure santé
+          </div>
+          <h1>Votre santé<br>notre <span>priorité</span></h1>
+          <p>Des soins attentionnés, une technologie avancée et des spécialistes expérimentés — pour une vie en meilleure santé.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#appointment">Prendre rendez-vous</a>
+            <a class="button button-outline" href="#services">Nos services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-icon">♙</span><strong>15+</strong><small>Docteurs experts</small></div>
+            <div class="stat"><span class="stat-icon">♥</span><strong>10k+</strong><small>Patients heureux</small></div>
+            <div class="stat"><span class="stat-icon">♙</span><strong>25+</strong><small>Spécialités</small></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="circle circle-large"></div>
+          <div class="circle circle-dots"></div>
+          <img src="medecin-detoure.png" alt="Médecin souriant">
+          <div class="support-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><path d="M4 13h3v5H5a2 2 0 0 1-2-2v-1a2 2 0 0 1 1-2ZM20 13h-3v5h2a2 2 0 0 0 2-2v-1a2 2 0 0 0-1-2ZM17 18c0 2-2 3-5 3"/></svg>
+            <strong>24/7</strong>
+            <small>Assistance<br>d'urgence</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Nos services</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 48 48"><path d="M24 13v7M24 34v-7M17 24h14"/><circle cx="24" cy="24" r="8"/><path d="M17 17c-4-1-7-4-7-8M31 31c4 1 7 4 7 8"/></svg></div>
+            <h3>Médecine générale</h3>
+            <ul class="service-missions">
+              <li><button class="mission-button" type="button" aria-pressed="false">Consulter et examiner les patients</button></li>
+              <li><button class="mission-button" type="button" aria-pressed="false">Diagnostiquer et traiter les maladies</button></li>
+              <li><button class="mission-button" type="button" aria-pressed="false">Prescrire des examens médicaux</button></li>
+              <li><button class="mission-button" type="button" aria-pressed="false">Faire de la prévention</button></li>
+              <li><button class="mission-button" type="button" aria-pressed="false">Orienter vers des spécialistes</button></li>
+            </ul>
+            <p class="mission-feedback" role="status" aria-live="polite">Aucune mission sélectionnée.</p>
+            <a href="#">En savoir plus <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-panel" id="packages">
+      <div class="container info-grid">
+        <article class="info-card choose-card">
+          <h3>Pourquoi nous choisir ?</h3>
+          <ul>
+            <li>Des médecins expérimentés</li>
+            <li>Des équipements modernes</li>
+            <li>Une approche centrée sur le patient</li>
+            <li>Des tarifs accessibles</li>
+          </ul>
+          <a class="mini-button" href="#">En savoir plus</a>
+        </article>
+        <article class="info-card care-card">
+          <h3>Prendre soin de vous</h3>
+          <p>Diagnostic rapide, meilleurs traitements et meilleure santé.</p>
+          <a class="mini-button filled" href="#appointment">Réserver maintenant</a>
+          <img src="medecin-carte.png" alt="Médecin souriant">
+        </article>
+        <article class="info-card emergency-card" id="contact">
+          <h3>Nous sommes là pour vous</h3>
+          <strong>24/7</strong>
+          <p>Disponible partout à Niamey</p>
+          <a class="mini-button" href="tel:+22791909105">91 90 91 05</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="container appointment-inner">
+        <div>
+          <span class="trust-pill">Rendez-vous en ligne</span>
+          <h2>Un soin adapté à vos besoins</h2>
+        </div>
+        <form id="appointment-form">
+          <input type="text" name="name" placeholder="Votre nom" aria-label="Votre nom" required>
+          <input type="tel" name="phone" placeholder="Votre téléphone" aria-label="Votre téléphone" required>
+          <button class="button button-primary" type="submit">Réserver</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
